@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import axios from "axios";
+// import axios from "axios";
 import React, { useState } from "react";
 
 // function App() {
@@ -20,34 +20,34 @@ import React, { useState } from "react";
 //     name:"" , email:"" , phone:"" , age:"" , date:"" , batchtiming:"" , payment:""
 //   });
 function Signup() {
-  const submitHandler = (event) => {
-    event.preventDefault();
+  // const submitHandler = (event) => {
+  //   event.preventDefault();
 
-    const name = event.target.name.value;
-    const email = event.target.email.value;
-    const phone = event.target.phone.value;
-    const age = event.target.age.value;
-    const date = event.target.date.value;
-    const timing = event.target.timing.value;
-    const payment = event.target.payment.value;
+  //   const name = event.target.name.value;
+  //   const email = event.target.email.value;
+  //   const phone = event.target.phone.value;
+  //   const age = event.target.age.value;
+  //   const date = event.target.date.value;
+  //   const timing = event.target.timing.value;
+  //   const payment = event.target.payment.value;
 
-    axios
-      .post("http://localhost:3000/newdb", {
-        name,
-        email,
-        phone,
-        age,
-        date,
-        timing,
-        payment,
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  //   axios
+  //     .post("http://localhost:3000/newdb", {
+  //       name,
+  //       email,
+  //       phone,
+  //       age,
+  //       date,
+  //       timing,
+  //       payment,
+  //     })
+  //     .then((response) => {
+  //       console.log(response);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // };
 
   const [user, setUser] = useState({
     name: "",
