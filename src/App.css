@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.signup-content {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 150vh;
+  min-height: 100vh;
+  align-content: center;
+}
